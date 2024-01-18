@@ -13736,7 +13736,8 @@ async function run() {
             }
           }
         } else {
-          core.warning(`The "${job}" job of the "${basename}" workflow does not contain uses or steps.`);  
+          // The following doesn't work with local workflows. commenting out for now
+          // core.warning(`The "${job}" job of the "${basename}" workflow does not contain uses or steps.`);
         }
 
         if (jobHasError) {
